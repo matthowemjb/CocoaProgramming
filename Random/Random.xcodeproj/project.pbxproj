@@ -13,6 +13,7 @@
 		C90FA1E81567DE4B00694ACE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C90FA1E61567DE4B00694ACE /* Credits.rtf */; };
 		C90FA1EB1567DE4B00694ACE /* RandomAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90FA1EA1567DE4B00694ACE /* RandomAppDelegate.m */; };
 		C90FA1EE1567DE4B00694ACE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90FA1EC1567DE4B00694ACE /* MainMenu.xib */; };
+		C9DADD0C1568031900EE5ACF /* RandomController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DADD0B1568031900EE5ACF /* RandomController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C90FA1E91567DE4B00694ACE /* RandomAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomAppDelegate.h; sourceTree = "<group>"; };
 		C90FA1EA1567DE4B00694ACE /* RandomAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomAppDelegate.m; sourceTree = "<group>"; };
 		C90FA1ED1567DE4B00694ACE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9DADD0A1568031900EE5ACF /* RandomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomController.h; sourceTree = "<group>"; };
+		C9DADD0B1568031900EE5ACF /* RandomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				C90FA1E91567DE4B00694ACE /* RandomAppDelegate.h */,
 				C90FA1EA1567DE4B00694ACE /* RandomAppDelegate.m */,
 				C90FA1EC1567DE4B00694ACE /* MainMenu.xib */,
+				C9DADD0A1568031900EE5ACF /* RandomController.h */,
+				C9DADD0B1568031900EE5ACF /* RandomController.m */,
 				C90FA1DE1567DE4B00694ACE /* Supporting Files */,
 			);
 			path = Random;
@@ -168,6 +173,7 @@
 			files = (
 				C90FA1E41567DE4B00694ACE /* main.m in Sources */,
 				C90FA1EB1567DE4B00694ACE /* RandomAppDelegate.m in Sources */,
+				C9DADD0C1568031900EE5ACF /* RandomController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				C90FA1F31567DE4B00694ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
