@@ -14,6 +14,7 @@
     int firstNumber;
     int secondNumber;
 }
+- (id)initWithEntryDate:(NSDate *)date;
 - (void)prepareRandomNumbers;
 - (void)setEntryDate:(NSDate *)date;
 - (NSDate *)entryDate;

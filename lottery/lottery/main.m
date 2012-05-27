@@ -30,9 +30,10 @@ int main(int argc, const char * argv[])
             iWeeksFromNow = [cal dateByAddingComponents:weekComponents 
                                                  toDate:now 
                                                 options:0];
+//            LotteryEntry *newEntry = [[LotteryEntry alloc] initWithEntryDate:iWeeksFromNow];
             LotteryEntry *newEntry = [[LotteryEntry alloc] init];
-            [newEntry prepareRandomNumbers];
-            [newEntry setEntryDate:iWeeksFromNow];
+            //[newEntry prepareRandomNumbers];
+            //[newEntry setEntryDate:iWeeksFromNow];
             [array addObject:newEntry];
         
         }

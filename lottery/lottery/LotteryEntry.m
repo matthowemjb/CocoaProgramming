@@ -10,6 +10,21 @@
 
 @implementation LotteryEntry
 
+- (id)init
+{
+    return [self initWithEntryDate:[NSDate date]];
+}
+
+- (id)initWithEntryDate:(NSDate *)date
+{
+    self = [super init];
+    if (self) {
+        entryDate = date;
+        [self prepareRandomNumbers];
+    }
+    return self;
+}
+
 - (void)prepareRandomNumbers
 {
     firstNumber = ((int)random() % 100) + 1;
