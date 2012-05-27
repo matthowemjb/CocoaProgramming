@@ -7,24 +7,38 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LotteryEntry.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        NSDate *now = [[NSDate alloc] init];
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSDateComponents *weekComponents = [[NSDateComponents alloc] init];
+        
+        srandom((unsigned)time(NULL));
         
         NSMutableArray *array;
         array = [[NSMutableArray alloc] init];
         int i;
         for (i = 0; i < 10; i++)
         {
-            NSNumber *newNumber = [[NSNumber alloc] initWithInt:(i * 3)];
-            [array addObject:newNumber];
+        
+            [weekComponents setWeek:i];
+            NSDate *iWeeksFromNow;
+            iWeeksFromNow = [cal dateByAddingComponents:weekComponents 
+                                                 toDate:now 
+                                                options:0];
+            LotteryEntry *newEntry = [[LotteryEntry alloc] init];
+            [newEntry prepareRandomNumbers];
+            [newEntry setEntryDate:iWeeksFromNow];
+            [array addObject:newEntry];
+        
         }
-        for (i = 0; i < [array count]; i++)
+        for (LotteryEntry *entryToPrint in array)
         {
-            NSNumber *numberToPrint = [array objectAtIndex:i];
-            NSLog(@"Number at index %d has value %@", i, numberToPrint);
+            NSLog(@"%@", entryToPrint);
         }
         
     }

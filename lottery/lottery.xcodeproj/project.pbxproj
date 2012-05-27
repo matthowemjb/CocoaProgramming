@@ -10,6 +10,7 @@
 		C9A2A4451572AA730044FF31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A2A4441572AA730044FF31 /* Foundation.framework */; };
 		C9A2A4481572AA730044FF31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A2A4471572AA730044FF31 /* main.m */; };
 		C9A2A44C1572AA730044FF31 /* lottery.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9A2A44B1572AA730044FF31 /* lottery.1 */; };
+		C9A2A4541572B33B0044FF31 /* LotteryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A2A4531572B33B0044FF31 /* LotteryEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C9A2A4471572AA730044FF31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9A2A44A1572AA730044FF31 /* lottery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lottery-Prefix.pch"; sourceTree = "<group>"; };
 		C9A2A44B1572AA730044FF31 /* lottery.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = lottery.1; sourceTree = "<group>"; };
+		C9A2A4521572B33B0044FF31 /* LotteryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryEntry.h; sourceTree = "<group>"; };
+		C9A2A4531572B33B0044FF31 /* LotteryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				C9A2A4471572AA730044FF31 /* main.m */,
+				C9A2A4521572B33B0044FF31 /* LotteryEntry.h */,
+				C9A2A4531572B33B0044FF31 /* LotteryEntry.m */,
 				C9A2A44B1572AA730044FF31 /* lottery.1 */,
 				C9A2A4491572AA730044FF31 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A2A4481572AA730044FF31 /* main.m in Sources */,
+				C9A2A4541572B33B0044FF31 /* LotteryEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
