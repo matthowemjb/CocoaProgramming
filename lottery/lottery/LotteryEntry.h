@@ -20,5 +20,6 @@
 - (NSDate *)entryDate;
 - (int)firstNumber;
 - (int)secondNumber;
++ (void)printLocaleIdentifiers;
 
 @end

@@ -21,7 +21,9 @@ int main(int argc, const char * argv[])
         
         NSMutableArray *array;
         array = [[NSMutableArray alloc] init];
+        //NSLog(@"First Item = %@", [array objectAtIndex:0]);
         int i;
+        [LotteryEntry printLocaleIdentifiers];
         for (i = 0; i < 10; i++)
         {
         
@@ -30,10 +32,7 @@ int main(int argc, const char * argv[])
             iWeeksFromNow = [cal dateByAddingComponents:weekComponents 
                                                  toDate:now 
                                                 options:0];
-//            LotteryEntry *newEntry = [[LotteryEntry alloc] initWithEntryDate:iWeeksFromNow];
             LotteryEntry *newEntry = [[LotteryEntry alloc] init];
-            //[newEntry prepareRandomNumbers];
-            //[newEntry setEntryDate:iWeeksFromNow];
             [array addObject:newEntry];
         
         }

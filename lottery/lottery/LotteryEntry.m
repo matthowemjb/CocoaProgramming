@@ -19,6 +19,7 @@
 {
     self = [super init];
     if (self) {
+        NSAssert(date != nil, @"Argument must not be nil");
         entryDate = date;
         [self prepareRandomNumbers];
     }
@@ -55,6 +56,8 @@
 {
     //Return pointer to NSString object describing LotteryEntry
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"zu_ZA"];
+    [df setLocale:usLocale];
     [df setTimeStyle:NSDateFormatterNoStyle];
     [df setDateStyle:NSDateFormatterMediumStyle];
     //NSString *result;
@@ -64,6 +67,14 @@
             firstNumber, secondNumber];
     //return result;
     
+}
+
++ (void)printLocaleIdentifiers
+{
+    for (NSString *localeIdentifier in [NSLocale availableLocaleIdentifiers])
+    {
+        NSLog(@"%@", localeIdentifier);
+    }
 }
 
 @end
