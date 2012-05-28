@@ -32,15 +32,18 @@ int main(int argc, const char * argv[])
             iWeeksFromNow = [cal dateByAddingComponents:weekComponents 
                                                  toDate:now 
                                                 options:0];
-            LotteryEntry *newEntry = [[LotteryEntry alloc] init];
+            LotteryEntry *newEntry = [[LotteryEntry alloc] initWithEntryDate:iWeeksFromNow];
             [array addObject:newEntry];
+            [newEntry release];
         
         }
+        [now release];
+        [weekComponents release];
         for (LotteryEntry *entryToPrint in array)
         {
             NSLog(@"%@", entryToPrint);
         }
-        
+        [array release];
     }
     return 0;
 }

@@ -20,7 +20,7 @@
     self = [super init];
     if (self) {
         NSAssert(date != nil, @"Argument must not be nil");
-        entryDate = date;
+        [self setEntryDate:date];
         [self prepareRandomNumbers];
     }
     return self;
@@ -34,7 +34,7 @@
 
 - (void)setEntryDate:(NSDate *)date
 {
-    entryDate = date;
+    entryDate = [date retain];
 }
 
 - (NSDate *)entryDate
@@ -60,13 +60,19 @@
     [df setLocale:usLocale];
     [df setTimeStyle:NSDateFormatterNoStyle];
     [df setDateStyle:NSDateFormatterMediumStyle];
-    //NSString *result;
-    //result = 
-    return [[NSString alloc] initWithFormat:@"%@ = %d and %d", 
+    NSString *result;
+    result =[NSString stringWithFormat:@"%@ = %d and %d", 
             [df stringFromDate:entryDate], 
             firstNumber, secondNumber];
-    //return result;
-    
+    [usLocale release];
+    [df release];
+    return result;
+}
+
+- (void)dealloc
+{
+    [entryDate release];
+    [super dealloc];
 }
 
 + (void)printLocaleIdentifiers
