@@ -34,7 +34,9 @@
 
 - (void)setEntryDate:(NSDate *)date
 {
-    entryDate = [date retain];
+    [date retain];
+    [entryDate release];
+    entryDate = date;
 }
 
 - (NSDate *)entryDate
