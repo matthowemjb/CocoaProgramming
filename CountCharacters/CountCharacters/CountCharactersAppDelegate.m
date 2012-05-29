@@ -18,6 +18,8 @@
 {
     // Insert code here to initialize your application
     [self countCharacters:self];
+    // Have to wait for _textField to be initialized.
+    [_textField setDelegate:self];
     NSLog(@"textField delegate: %@", [_textField delegate]);
 }
 
