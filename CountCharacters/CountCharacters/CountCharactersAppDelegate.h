@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CountCharactersAppDelegate : NSObject <NSApplicationDelegate>
+@interface CountCharactersAppDelegate : NSObject <NSApplicationDelegate, NSTextFieldDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSTextField *textToDisplay;
