@@ -35,6 +35,13 @@
     return self;
 }
 
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    NSString *methodName = NSStringFromSelector(aSelector);
+    NSLog(@"respondsToSelector: %@", methodName);
+    return [super respondsToSelector:aSelector];
+}
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tv
 {
     return (NSInteger)[_voices count];
