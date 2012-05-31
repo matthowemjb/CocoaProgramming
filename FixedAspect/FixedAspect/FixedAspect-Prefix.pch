@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FixedAspect' target in the 'FixedAspect' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

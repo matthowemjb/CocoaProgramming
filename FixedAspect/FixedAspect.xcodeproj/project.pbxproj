@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9A906C81576EBD0004FBCF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A906C71576EBD0004FBCF1 /* Cocoa.framework */; };
+		C9A906D21576EBD0004FBCF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A906D01576EBD0004FBCF1 /* InfoPlist.strings */; };
+		C9A906D41576EBD0004FBCF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A906D31576EBD0004FBCF1 /* main.m */; };
+		C9A906D81576EBD0004FBCF1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9A906D61576EBD0004FBCF1 /* Credits.rtf */; };
+		C9A906DB1576EBD0004FBCF1 /* FixedAspectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A906DA1576EBD0004FBCF1 /* FixedAspectAppDelegate.m */; };
+		C9A906DE1576EBD1004FBCF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A906DC1576EBD1004FBCF1 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9A906C31576EBD0004FBCF1 /* FixedAspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixedAspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A906C71576EBD0004FBCF1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9A906CA1576EBD0004FBCF1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9A906CB1576EBD0004FBCF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9A906CC1576EBD0004FBCF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9A906CF1576EBD0004FBCF1 /* FixedAspect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FixedAspect-Info.plist"; sourceTree = "<group>"; };
+		C9A906D11576EBD0004FBCF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9A906D31576EBD0004FBCF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9A906D51576EBD0004FBCF1 /* FixedAspect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FixedAspect-Prefix.pch"; sourceTree = "<group>"; };
+		C9A906D71576EBD0004FBCF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C9A906D91576EBD0004FBCF1 /* FixedAspectAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedAspectAppDelegate.h; sourceTree = "<group>"; };
+		C9A906DA1576EBD0004FBCF1 /* FixedAspectAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixedAspectAppDelegate.m; sourceTree = "<group>"; };
+		C9A906DD1576EBD1004FBCF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9A906C01576EBD0004FBCF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A906C81576EBD0004FBCF1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9A906B81576EBD0004FBCF1 = {
+			isa = PBXGroup;
+			children = (
+				C9A906CD1576EBD0004FBCF1 /* FixedAspect */,
+				C9A906C61576EBD0004FBCF1 /* Frameworks */,
+				C9A906C41576EBD0004FBCF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9A906C41576EBD0004FBCF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9A906C31576EBD0004FBCF1 /* FixedAspect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9A906C61576EBD0004FBCF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9A906C71576EBD0004FBCF1 /* Cocoa.framework */,
+				C9A906C91576EBD0004FBCF1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A906C91576EBD0004FBCF1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9A906CA1576EBD0004FBCF1 /* AppKit.framework */,
+				C9A906CB1576EBD0004FBCF1 /* CoreData.framework */,
+				C9A906CC1576EBD0004FBCF1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9A906CD1576EBD0004FBCF1 /* FixedAspect */ = {
+			isa = PBXGroup;
+			children = (
+				C9A906D91576EBD0004FBCF1 /* FixedAspectAppDelegate.h */,
+				C9A906DA1576EBD0004FBCF1 /* FixedAspectAppDelegate.m */,
+				C9A906DC1576EBD1004FBCF1 /* MainMenu.xib */,
+				C9A906CE1576EBD0004FBCF1 /* Supporting Files */,
+			);
+			path = FixedAspect;
+			sourceTree = "<group>";
+		};
+		C9A906CE1576EBD0004FBCF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9A906CF1576EBD0004FBCF1 /* FixedAspect-Info.plist */,
+				C9A906D01576EBD0004FBCF1 /* InfoPlist.strings */,
+				C9A906D31576EBD0004FBCF1 /* main.m */,
+				C9A906D51576EBD0004FBCF1 /* FixedAspect-Prefix.pch */,
+				C9A906D61576EBD0004FBCF1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9A906C21576EBD0004FBCF1 /* FixedAspect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9A906E11576EBD1004FBCF1 /* Build configuration list for PBXNativeTarget "FixedAspect" */;
+			buildPhases = (
+				C9A906BF1576EBD0004FBCF1 /* Sources */,
+				C9A906C01576EBD0004FBCF1 /* Frameworks */,
+				C9A906C11576EBD0004FBCF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixedAspect;
+			productName = FixedAspect;
+			productReference = C9A906C31576EBD0004FBCF1 /* FixedAspect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9A906BA1576EBD0004FBCF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FixedAspect;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C9A906BD1576EBD0004FBCF1 /* Build configuration list for PBXProject "FixedAspect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9A906B81576EBD0004FBCF1;
+			productRefGroup = C9A906C41576EBD0004FBCF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9A906C21576EBD0004FBCF1 /* FixedAspect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9A906C11576EBD0004FBCF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A906D21576EBD0004FBCF1 /* InfoPlist.strings in Resources */,
+				C9A906D81576EBD0004FBCF1 /* Credits.rtf in Resources */,
+				C9A906DE1576EBD1004FBCF1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9A906BF1576EBD0004FBCF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A906D41576EBD0004FBCF1 /* main.m in Sources */,
+				C9A906DB1576EBD0004FBCF1 /* FixedAspectAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9A906D01576EBD0004FBCF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A906D11576EBD0004FBCF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9A906D61576EBD0004FBCF1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A906D71576EBD0004FBCF1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C9A906DC1576EBD1004FBCF1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A906DD1576EBD1004FBCF1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9A906DF1576EBD1004FBCF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9A906E01576EBD1004FBCF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9A906E21576EBD1004FBCF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FixedAspect/FixedAspect-Prefix.pch";
+				INFOPLIST_FILE = "FixedAspect/FixedAspect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9A906E31576EBD1004FBCF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FixedAspect/FixedAspect-Prefix.pch";
+				INFOPLIST_FILE = "FixedAspect/FixedAspect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9A906BD1576EBD0004FBCF1 /* Build configuration list for PBXProject "FixedAspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A906DF1576EBD1004FBCF1 /* Debug */,
+				C9A906E01576EBD1004FBCF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9A906E11576EBD1004FBCF1 /* Build configuration list for PBXNativeTarget "FixedAspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A906E21576EBD1004FBCF1 /* Debug */,
+				C9A906E31576EBD1004FBCF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9A906BA1576EBD0004FBCF1 /* Project object */;
+}
